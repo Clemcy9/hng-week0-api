@@ -10,7 +10,7 @@ Ensure you have Python installed on your machine. This project requires Python 3
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/Clemcy9/hng-week0-api.git
    cd your-repo
    ```
 
@@ -39,7 +39,7 @@ Ensure you have Python installed on your machine. This project requires Python 3
 
 ## API Endpoint
 
-### GET `/api/user-details/`
+### GET `https://memorys.pythonanywhere.com/api/user-details/`
 
 #### Response Format:
 ```json
