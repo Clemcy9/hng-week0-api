@@ -1,0 +1,76 @@
+# Byte-compiled / optimized / package files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+env/
+*.venv
+
+# Django stuff
+db.sqlite3
+media/
+staticfiles/
+
+# Django secret key & environment variables
+.env
+*.env
+config/settings/local.py  # If you use a local settings file
+
+# Logs & debug files
+*.log
+logs/
+debug.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.iml
+
+# Migrations (optional: keep initial migrations)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Cache and temp files
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+.npm/
+node_modules/
+dist/
+build/
+*.bak
+
+# Celery & Redis
+celerybeat-schedule
+celerybeat.pid
+
+# Database dumps
+*.sqlite3
+*.pks
+*.pgpass
+
+# Docker
+docker-compose.override.yml
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+*.pycoverage
+coverage.xml
+
+# MyPy type checking
+.mypy_cache/
+
+# Pipenv
+Pipfile.lock
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# macOS specific
+.DS_Store
