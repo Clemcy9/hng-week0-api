@@ -37,16 +37,37 @@ Ensure you have Python installed on your machine. This project requires Python 3
    python manage.py runserver
    ```
 
-## API Endpoint
+## API Endpoints
 
-### GET `https://memorys.pythonanywhere.com/api/user-details/`
+### 1. GET `https://memorys.pythonanywhere.com/api/user-details/`
 
-#### Response Format:
+### 2. GET `https://memorys.pythonanywhere.com/api/classify-number/243`
+
+#### Response Format for endpoint 1:
 ```json
 {
   "email": "your-email@example.com",
   "current_datetime": "2025-01-30T09:30:00Z",
   "github_url": "https://github.com/yourusername/your-repo"
+}
+```
+
+#### Response Format for endpoint 1:
+```json
+
+{
+    "number": 371,
+    "is_prime": false,
+    "is_perfect": false,
+    "properties": ["armstrong", "odd"],
+    "digit_sum": 11,  // sum of its digits
+    "fun_fact": "371 is an Armstrong number because 3^3 + 7^3 + 1^3 = 371" //gotten from the numbers API
+}
+
+Required JSON Response Format (400 Bad Request)
+{
+    "number": "alphabet",
+    "error": true
 }
 ```
 
