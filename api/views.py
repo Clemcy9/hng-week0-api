@@ -69,7 +69,9 @@ def is_even_odd(n):
         return 'odd'
 
 class NumberAPIView(APIView):
-    def get(self, request, num):
+    def get(self, request):
+        # using query param
+        num = request.query_params.get('number')
         if not num.isdigit():
             return Response({
                 "number": "alphabet",
