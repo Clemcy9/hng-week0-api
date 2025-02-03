@@ -72,7 +72,7 @@ class NumberAPIView(APIView):
     def get(self, request):
         # using query param
         num = request.query_params.get('number')
-        if not num.isdigit():
+        if not num or num.isdigit():
             return Response({
                 "number": "alphabet",
                 "error": True
