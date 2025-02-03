@@ -11,7 +11,7 @@ def user_dated_details(request):
     return Response({
         "email": "clemcy9@gmail.com",
         "current_datetime": datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "github_url": ""
+        "github_url": "https://github.com/Clemcy9/hng-week0-api"
     })
 
 # {
