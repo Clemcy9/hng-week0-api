@@ -77,11 +77,21 @@ class NumberAPIView(APIView):
     def get(self, request):
         # using query param
         num = request.query_params.get('number')
-        if not num or num.isdigit():
+        if not num :
             return Response({
                 "number": "alphabet",
                 "error": True
             }, status=status.HTTP_400_BAD_REQUEST)
+        
+        try:
+            if int(num) < 0:
+                print('negative number')
+        except:
+            return Response({
+                "number": "alphabet",
+                "error": True
+            }, status=status.HTTP_400_BAD_REQUEST)
+        
         
         num_properties = []
         if is_armstrong(num):
