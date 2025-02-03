@@ -6,7 +6,7 @@ from rest_framework.response import Response
 
 from rest_framework.views import APIView
 from rest_framework import status
-import requests
+import requests, math
 
 
 
@@ -54,6 +54,9 @@ def is_perfect(n):
     return divisor_sum == n
 
 def sum_of_digits(n):
+    if int(n) < 0:
+        ans = sum(int(x) for x in str(abs(int(n))))
+        return -1 * ans
     return eval('+'.join(n))
 
 def is_armstrong(n:str):
