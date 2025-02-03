@@ -59,7 +59,8 @@ def sum_of_digits(n):
 def is_armstrong(n:str):
     digits = [int(digit) for digit in n]
     num_digits = len(digits)
-    return n == sum(digit ** num_digits for digit in digits)
+    print(f'is_armstrong: {int(n) == sum(digit ** num_digits for digit in digits)}')
+    return int(n) == sum(digit ** num_digits for digit in digits)
 
 def is_even_odd(n):
     if int(n) % 2 == 0:
