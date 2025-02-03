@@ -57,6 +57,8 @@ def sum_of_digits(n):
     return eval('+'.join(n))
 
 def is_armstrong(n:str):
+    if int(n) < 0:
+        return False
     digits = [int(digit) for digit in n]
     num_digits = len(digits)
     print(f'is_armstrong: {int(n) == sum(digit ** num_digits for digit in digits)}')
